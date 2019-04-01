@@ -138,25 +138,64 @@ main{
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin-top:1rem;
+    margin-top:5rem;
+    
 
-    div{
-        font-size:2rem;
-        border:3px #fff solid;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 2rem;
-        @include easeOut;
+    .skill{
+        font-size:3rem;
+        border:3px darken(#fff,20) solid;
+        padding: 1.5rem 1.5rem;
+        margin-bottom: 0.5rem;
+        flex-basis: 17%;
+        transition: .3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        border-radius: 30%;
+        text-align: center;
+        height: 20vh;
 
         &:hover{
-            padding: 0.5rem 1.5rem;
-            background: $secondary-color;
-            color:#fff;
-            span {
-                color:#000;
-            }
+            border:5px solid $secondary-color;
+            background: darken($primary-color,2);
         }
+
+       p{
+           font-size:1.5rem;
+       }
+       
+       .fa-js{
+           color:#FFFF00;
+       }
+       .fa-tablet-alt{
+           color:#000;
+       }
+       .fa-sass{
+           color:palevioletred;
+       }
+       .fa-css3-alt{
+           color:#51a0d5;
+       }
+       .fa-html5{
+           color:darkorange;
+       }
+       .fa-gulp{
+           color:#db4446;
+       }
+       .fa-react{
+           color:#4163fb;
+       }
+       .fa-code-branch{
+           color:#d14623;
+       }
+       .fa-bootstrap{
+           color:#440088;
+       }
+       .fa-npm{
+           color:red;
+       }
     }
 }
 
@@ -192,6 +231,7 @@ main{
     color:#fff;
     height: 60px;
 }
+
 
 
 

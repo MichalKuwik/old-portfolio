@@ -192,6 +192,25 @@ main {
       border-color: #2ED0BA;
       transition: all 0.5s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: #2ED0BA;
+      color: #fff; }
+      .boxes div:hover span {
+        color: #000; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -219,11 +238,15 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  #contact {
+    height: calc(100vh - 60px); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  #contact {
+    height: calc(100vh - 60px); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -247,7 +270,12 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   #work h1.lg-heading {
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  #contact h1.lg-heading {
+    font-size: 4rem; }
+  #contact .boxes div {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

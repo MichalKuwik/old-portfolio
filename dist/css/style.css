@@ -200,7 +200,6 @@ main {
   margin-top: 5rem; }
   .boxes .skill {
     font-size: 3rem;
-    border: 3px #cccccc solid;
     padding: 1.5rem 1.5rem;
     margin-bottom: 0.5rem;
     flex-basis: 17%;
@@ -297,7 +296,17 @@ main {
     font-size: 4rem; }
   #skills .boxes .skill {
     font-size: 1.5rem;
-    padding: 1rem 1.5rem; } }
+    padding: 1rem 1.5rem; }
+  .boxes .skill {
+    flex-basis: 50%;
+    font-size: 15rem;
+    height: 30vh; }
+    .boxes .skill .fab {
+      font-size: 6rem; }
+    .boxes .skill .fas {
+      font-size: 6rem; }
+    .boxes .skill p {
+      font-size: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {

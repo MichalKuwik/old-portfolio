@@ -78,7 +78,24 @@
             }
         }
     } 
+    .boxes{
+        .skill{
+            flex-basis: 50%;
+            font-size: 15rem;
+            height: 30vh;
 
+            .fab{
+                font-size:6rem;
+            }
+            .fas{
+                font-size: 6rem;
+            }
+
+            p{
+                font-size:1.5rem;
+            }
+        }
+    }
    
 }
 //smartphones

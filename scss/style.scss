@@ -232,7 +232,16 @@ main{
     height: 60px;
 }
 
+.item{
+    height: 20rem;
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
 
+   img{
+       height: 25vh;
+   }
+}
 
 
 @import 'mobile';

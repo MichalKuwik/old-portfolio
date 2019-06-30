@@ -185,7 +185,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2  job3';
+  grid-template-areas: 'bioimage bio bio'
+ 'job1 job2  job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -281,6 +282,11 @@ main {
       color: #440088; }
     .boxes .skill .fa-npm {
       color: red; }
+    .boxes .skill .fa-figma {
+      background: -webkit-gradient(linear, left bottom, right top, from(#cd784a), color-stop(#e26550), color-stop(#f34d63), color-stop(#fe2d80), color-stop(#fd00a7), color-stop(#fe00a4), color-stop(#fe00a1), color-stop(#ff009e), color-stop(#ff3d6f), color-stop(#ff7d3f), color-stop(#ffb700), to(#f6eb07));
+      background: linear-gradient(to right top, #cd784a, #e26550, #f34d63, #fe2d80, #fd00a7, #fe00a4, #fe00a1, #ff009e, #ff3d6f, #ff7d3f, #ffb700, #f6eb07);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -361,7 +367,11 @@ main {
     width: 150px;
     height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }

@@ -196,6 +196,11 @@ main{
        .fa-npm{
            color:red;
        }
+       .fa-figma{
+        background:linear-gradient(to right top, #cd784a, #e26550, #f34d63, #fe2d80, #fd00a7, #fe00a4, #fe00a1, #ff009e, #ff3d6f, #ff7d3f, #ffb700, #f6eb07);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+       }
     }
 }
 

@@ -149,7 +149,7 @@ main{
         padding: 1.5rem 1.5rem;
         margin-bottom: 0.5rem;
         flex-basis: 17%;
-        transition: .3s ease;
+        transition: .1s ease;
         display: flex;
         flex-direction: column;
         align-items: space-between;
@@ -158,7 +158,6 @@ main{
         height: 20vh;
 
         &:hover{
-            border:5px solid $secondary-color;
             background: darken($primary-color,2);
         }
 
@@ -200,6 +199,17 @@ main{
         background:linear-gradient(to right top, #cd784a, #e26550, #f34d63, #fe2d80, #fd00a7, #fe00a4, #fe00a1, #ff009e, #ff3d6f, #ff7d3f, #ffb700, #f6eb07);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+       }
+
+       & .skill-img{
+           width:50%;
+           height: 50%;
+           margin:0 auto;
+
+           & img{
+               width:100%;
+               height: 100%;
+           }
        }
     }
 }

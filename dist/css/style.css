@@ -4,26 +4,21 @@
   right: 35px;
   top: 35px;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
+    transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
-      -webkit-transform: rotate(45deg) translate(5px, 5px);
-              transform: rotate(45deg) translate(5px, 5px); }
+      transform: rotate(45deg) translate(5px, 5px); }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      -webkit-transform: rotate(-45deg) translate(7px, -6px);
-              transform: rotate(-45deg) translate(7px, -6px); }
+      transform: rotate(-45deg) translate(7px, -6px); }
 
 .menu {
   position: fixed;
@@ -34,19 +29,10 @@
   .menu.show {
     visibility: visible; }
   .menu-branding, .menu-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
@@ -57,20 +43,15 @@
     background: #373737;
     list-style: none;
     -webkit-transform: translate3d(0, -100%, 0);
-    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
     .menu-nav.show {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-    -webkit-transition: all 0.5s ease-out;
+    transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
@@ -79,13 +60,10 @@
       border-radius: 50%;
       border: 3px solid #2ED0BA; }
   .menu .nav-item {
-    -webkit-transform: translate3d(600px, 0, 0);
-            transform: translate3d(600px, 0, 0);
-    -webkit-transition: all 0.5s ease-out;
+    transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       color: #2ED0BA; }
   .menu .nav-link {
@@ -97,30 +75,24 @@
     font-weight: 300;
     color: #fff;
     text-decoration: none;
-    -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       color: #2ED0BA; }
 
 .nav-item:nth-child(1) {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s; }
+  transition-delay: 0.1s; }
 
 .nav-item:nth-child(2) {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s; }
+  transition-delay: 0.2s; }
 
 .nav-item:nth-child(3) {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s; }
+  transition-delay: 0.3s; }
 
 .nav-item:nth-child(4) {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s; }
+  transition-delay: 0.4s; }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  box-sizing: border-box; }
 
 body {
   background: #444;
@@ -175,7 +147,6 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #2ED0BA;
-        -webkit-transition: all 0.5s ease-out;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -207,7 +178,6 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #2ED0BA 5px solid;
-    -webkit-transition: 0.5s linear;
     transition: 0.5s linear; }
 
 .projects {
@@ -220,39 +190,23 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #2ED0BA;
-      -webkit-transition: all 0.5s ease-out;
       transition: all 0.5s ease-out; }
 
 .boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 5rem; }
   .boxes .skill {
     font-size: 3rem;
     padding: 1.5rem 1.5rem;
     margin-bottom: 0.5rem;
-    -ms-flex-preferred-size: 17%;
-        flex-basis: 17%;
-    -webkit-transition: .1s ease;
+    flex-basis: 17%;
     transition: .1s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between;
+    flex-direction: column;
+    align-items: space-between;
     border-radius: 30%;
     text-align: center;
     height: 20vh; }
@@ -281,12 +235,11 @@ main {
     .boxes .skill .fa-npm {
       color: red; }
     .boxes .skill .fa-figma {
-      background: -webkit-gradient(linear, left bottom, right top, from(#cd784a), color-stop(#e26550), color-stop(#f34d63), color-stop(#fe2d80), color-stop(#fd00a7), color-stop(#fe00a4), color-stop(#fe00a1), color-stop(#ff009e), color-stop(#ff3d6f), color-stop(#ff7d3f), color-stop(#ffb700), to(#f6eb07));
       background: linear-gradient(to right top, #cd784a, #e26550, #f34d63, #fe2d80, #fd00a7, #fe00a4, #fe00a1, #ff009e, #ff3d6f, #ff7d3f, #ffb700, #f6eb07);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .boxes .skill .skill-img {
-      width: 50%;
+      width: 35%;
       height: 50%;
       margin: 0 auto; }
       .boxes .skill .skill-img img {
@@ -320,16 +273,9 @@ main {
 
 .item {
   height: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  flex-direction: column;
+  justify-content: center; }
   .item img {
     height: 25vh; }
 
@@ -341,8 +287,7 @@ main {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .boxes .skill {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
+    flex-basis: 30%;
     font-size: 15rem;
     height: 30vh; }
     .boxes .skill .fab {
@@ -354,9 +299,7 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     text-align: center; }
     main .lg-heading {
       line-height: 1;
@@ -366,8 +309,7 @@ main {
     width: 100%;
     height: 50vh; }
     ul.menu-nav.show, div.menu-branding.show {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0); }
+      transform: translate3d(0, 0, 0); }
   .menu-branding .portrait {
     width: 150px;
     height: 150px; }
@@ -384,8 +326,7 @@ main {
     font-size: 1.5rem;
     padding: 1rem 1.5rem; }
   .boxes .skill {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
     font-size: 15rem;
     height: 30vh; }
     .boxes .skill .fab {
@@ -404,8 +345,7 @@ main {
   .projects {
     grid-template-columns: 1fr; }
   .boxes .skill {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
     font-size: 15rem;
     height: 30vh; }
     .boxes .skill .fab {

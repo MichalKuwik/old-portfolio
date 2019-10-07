@@ -239,7 +239,7 @@ main {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .boxes .skill .skill-img {
-      width: 35%;
+      width: 45%;
       height: 50%;
       margin: 0 auto; }
       .boxes .skill .skill-img img {
@@ -288,8 +288,10 @@ main {
     grid-template-columns: repeat(3, 1fr); }
   .boxes .skill {
     flex-basis: 30%;
-    font-size: 15rem;
+    font-size: 5rem;
     height: 30vh; }
+    .boxes .skill p {
+      margin-top: 1rem; }
     .boxes .skill .fab {
       font-size: 6rem; }
     .boxes .skill .fas {
@@ -327,7 +329,7 @@ main {
     padding: 1rem 1.5rem; }
   .boxes .skill {
     flex-basis: 50%;
-    font-size: 15rem;
+    font-size: 5rem;
     height: 30vh; }
     .boxes .skill .fab {
       font-size: 6rem; }

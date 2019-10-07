@@ -20,8 +20,12 @@
     .boxes{
         .skill{
             flex-basis: 30%;
-            font-size: 15rem;
+            font-size: 5rem;
             height: 30vh;
+
+            p{
+                margin-top:1rem;
+            }
 
             .fab{
                 font-size:6rem;
@@ -100,7 +104,7 @@
     .boxes{
         .skill{
             flex-basis: 50%;
-            font-size: 15rem;
+            font-size: 5rem;
             height: 30vh;
 
             .fab{

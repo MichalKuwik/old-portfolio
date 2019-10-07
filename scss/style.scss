@@ -156,6 +156,7 @@ main{
         border-radius: 30%;
         text-align: center;
         height: 20vh;
+        
 
         &:hover{
             background: darken($primary-color,2);
@@ -202,7 +203,7 @@ main{
        }
 
        & .skill-img{
-           width:35%;
+           width:45%;
            height: 50%;
            margin:0 auto;
 
